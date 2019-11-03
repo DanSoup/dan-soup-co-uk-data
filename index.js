@@ -10,6 +10,7 @@ http.createServer(function (req, res) {
   const [parametersString, queriesString = ''] = req.url.split('?');
 
   const parameters = parametersString.split('/').slice(1);
+  
   const queries = queriesString.split('&').reduce((acc, query) => {
     const [key, value] = query.split('=');
     acc[key] = value;
