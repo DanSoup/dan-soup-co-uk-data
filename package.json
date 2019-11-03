@@ -1,0 +1,22 @@
+{
+  "name": "data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "upload": "aws s3 sync --dryrun data/ s3://dansoup.co.uk-content --acl public-read"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanSoup/dan-soup-co-uk-data.git"
+  },
+  "author": "Dan Soup (Daniel Thomas)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanSoup/dan-soup-co-uk-data/issues"
+  },
+  "homepage": "https://github.com/DanSoup/dan-soup-co-uk-data#readme"
+}
